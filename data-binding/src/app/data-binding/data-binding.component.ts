@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { FormsModule } from '@angular/forms';
+
 @Component({
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
@@ -11,10 +13,12 @@ export class DataBindingComponent implements OnInit {
   url:string = 'http://loiane.com';
   cursoAngular: boolean = true;
   urlImage:string = 'http://lorempixel.com/400/200/sports'
-  valorAtual: string = ""
-  valorSalvo: string = ""
+  valorAtual: string = "";
+  valorSalvo: string = "";
   isMouseOver: boolean = false;
   isMouseOut: boolean = true;
+  
+  nomeDoCurso:string = 'Angular';
 
   constructor() { }
 
